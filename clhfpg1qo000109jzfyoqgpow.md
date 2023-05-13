@@ -28,7 +28,7 @@ In this example, we set the specific version `1.2.3` of the Gem `example_gem`.
 gem 'example_gem', '~> 1.2.0'
 ```
 
-The example provided means that any version of the gem `example_gem` starting with 1.2 up to, but not including the major update is compatible with the project. So the range of compatible versions will be accepted, and it is the same as say that the gem `example_gem` will install only versions `>= 1.2.0` and `< 2.0.0`.
+The example provided means that any version of the gem `example_gem` starting with 1.2 up to, but not including the major update is compatible with the project. So the range of compatible versions will be accepted, and it is the same as say that the gem `example_gem` will install only versions `>= 1.2.0` and `< 1.3.0`.
 
 1. **Setting an interval between the accepted versions of the Gem:**
     
