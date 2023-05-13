@@ -28,7 +28,11 @@ In this example, we set the specific version `1.2.3` of the Gem `example_gem`.
 gem 'example_gem', '~> 1.2.0'
 ```
 
-The example provided means that any version of the gem `example_gem` starting with 1.2 up to, but not including the major update is compatible with the project. So the range of compatible versions will be accepted, and it is the same as say that the gem `example_gem` will install only versions `>= 1.2.0` and `< 1.3.0`.
+This means that your project depends on the gem called example\_gem, and the specified version should be greater than or equal to 1.2.0, but less than 1.3.0.
+
+In other words, the ~&gt; operator allows for minor updates (the last version number) to be automatically installed, as long as the major version (first number) and the minor version (second number) remain the same.
+
+For example, if a new version 1.2.5 or 1.2.6 is released, the Bundler will allow it to be automatically installed, but if a new version 1.3.0 is released, the Bundler will not automatically update because that version is no longer within the specified range of constraint.
 
 1. **Setting an interval between the accepted versions of the Gem:**
     
